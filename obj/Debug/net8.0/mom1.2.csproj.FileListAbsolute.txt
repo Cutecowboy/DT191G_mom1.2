@@ -1029,3 +1029,4 @@ C:\Users\navgh2\Desktop\test2\xampp\htdocs\DT191G\mom1\mom1.2\obj\Debug\net8.0\m
 C:\Users\navgh2\Desktop\test2\xampp\htdocs\DT191G\mom1\mom1.2\obj\Debug\net8.0\refint\mom1.2.dll
 C:\Users\navgh2\Desktop\test2\xampp\htdocs\DT191G\mom1\mom1.2\obj\Debug\net8.0\mom1.2.pdb
 C:\Users\navgh2\Desktop\test2\xampp\htdocs\DT191G\mom1\mom1.2\obj\Debug\net8.0\ref\mom1.2.dll
+C:\Users\navgh2\Desktop\test2\xampp\htdocs\DT191G\mom1\mom1.2\obj\Debug\net8.0\scopedcss\Components\Layout\FooterMenu.razor.rz.scp.css

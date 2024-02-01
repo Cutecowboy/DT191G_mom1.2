@@ -1,4 +1,32 @@
+/* /Components/Layout/FooterMenu.razor.rz.scp.css */
+footer[b-44xszfedzy] {
+    background-color: #0072B2;
+    padding: 1rem 1rem;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    position: relative;
+    top: 80px;
+}
+.footer-text p[b-44xszfedzy] {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
 /* /Components/Layout/MainLayout.razor.rz.scp.css */
+*[b-xruxc9mue7] {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}   
+main[b-xruxc9mue7] {
+    position: relative;
+    top: 80px;
+}
+.logo a[b-xruxc9mue7] {
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    margin: 0;
+    margin-left: 1rem;
+    text-decoration: none;
+}
 /* /Components/Layout/NavMenu.razor.rz.scp.css */
 /* Design av Header */
 header[b-lv81tnalhc] {
