@@ -1,0 +1,27 @@
+﻿[
+  {
+    "name": "Navid",
+    "age": 29,
+    "occupation": "Controller",
+    "education": "Masters"
+  },
+  {
+    "name": "Sandra",
+    "age": 29,
+    "occupation": "Talent Acquisition",
+    "education": "Bachelors"
+  },
+  {
+    "name": "Masoud",
+    "age": 61,
+    "occupation": "Operator",
+    "education": "High school"
+  },
+  {
+    "name": "Afsaneh",
+    "age": 57,
+    "occupation": "Daycare",
+    "education": "Bachelors"
+  }
+
+]

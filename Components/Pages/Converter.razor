@@ -1,0 +1,57 @@
+@page "/converter"
+
+<PageTitle>Konverterare</PageTitle>
+
+
+<h1>Konvertera</h1>
+
+
+
+<div class="row">
+
+    <div class=col>
+        <h2>Konvertera längd från meter till feet</h2>
+
+        <input type="number" name="dist" @bind="meter">
+
+        <button class="btn btn-primary" @onclick="convertMeterToFeet">Konvertera</button>
+
+        <p>@meter meter blir @feet feet.</p>
+    </div>
+
+    <div class="col">
+        <h2>Konvertera hastighet från km/hr till mph</h2>
+
+        <input type="number" name="speed" @bind="kmh">
+
+        <button class="btn btn-primary" @onclick="convertKmhToMph">Konvertera</button>
+
+        <p>@kmh km/hr blir @mph mph.</p>
+
+
+    </div>
+</div>
+
+
+
+
+@code {
+    private double meter = 0;
+
+    private double feet;
+
+    private void convertMeterToFeet()
+    {
+        feet = Math.Round((int)meter * 3.28,2);
+        
+    }
+
+    private double kmh = 0;
+    private double mph;
+
+    private void convertKmhToMph()
+    {
+        mph = Math.Round((int)kmh * 0.621371192,0);
+    }
+
+}

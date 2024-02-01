@@ -1,0 +1,49 @@
+@page "/people"
+@inject HttpClient Http
+
+<PageTitle>Information</PageTitle>
+
+<h1>Information</h1>
+
+@if(people == null){
+    <p>Laddar...</p>
+} else {
+    <table>
+        <thead>
+            <tr>
+                <th>Namn</th>
+                <th>Ålder</th>
+                <th>Yrke</th>
+                <th>Utbildning</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in people){
+                <tr>
+                    <td>@p.Name</td>
+                    <td>@p.Age</td>
+                    <td>@p.Occupation</td>
+                    <td>@p.Education</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code
+{
+    private PeopleList[]? people;
+
+    protected override async Task OnInitializedAsync(){
+        people = await Http.GetFromJsonAsync<PeopleList[]>("sample-data/people.json");
+    }
+
+    public class PeopleList
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Occupation { get; set; }
+        public string Education { get; set; }
+    }
+
+}
