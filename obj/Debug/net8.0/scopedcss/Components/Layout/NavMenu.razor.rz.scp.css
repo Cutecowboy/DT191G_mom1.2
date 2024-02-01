@@ -1,83 +1,194 @@
-.navbar-toggler[b-lv81tnalhc] {
-    background-color: rgba(255, 255, 255, 0.1);
+/* Design av Header */
+header[b-lv81tnalhc] {
+    height: 80px;
+    background-color: #0072B2;
+    margin: 0;
+    position: fixed;
+    padding: 0 1em;
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    top: 0;
 }
 
-.top-row[b-lv81tnalhc] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.navbar-brand[b-lv81tnalhc] {
-    font-size: 1.1rem;
-}
-
-.bi[b-lv81tnalhc] {
-    display: inline-block;
+main[b-lv81tnalhc] {
     position: relative;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.75rem;
-    top: -1px;
-    background-size: cover;
+    top: 80px;
 }
 
-.bi-house-door-fill[b-lv81tnalhc] {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
+.logo a[b-lv81tnalhc] {
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    margin: 0;
+    margin-left: 1rem;
+    text-decoration: none;
 }
 
-.bi-plus-square-fill[b-lv81tnalhc] {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z'/%3E%3C/svg%3E");
+/* Design av meny för mobilenheter, placeras till höger om skärmen */
+nav[b-lv81tnalhc] {
+    background-color: #0072B2;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+    font-size: 1.4em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1;
 }
 
-.bi-list-nested[b-lv81tnalhc] {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+.nav-hide[b-lv81tnalhc]{
+    display:none;
 }
 
-.nav-item[b-lv81tnalhc] {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
+nav ul[b-lv81tnalhc] {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
 }
 
-    .nav-item:first-of-type[b-lv81tnalhc] {
-        padding-top: 1rem;
-    }
+nav li[b-lv81tnalhc] {
+    padding: 0.8em 0;
+    width: 100%;
+}
 
-    .nav-item:last-of-type[b-lv81tnalhc] {
-        padding-bottom: 1rem;
-    }
+nav a[b-lv81tnalhc] {
+    color: white;
+    text-decoration: none;
+    padding: 0 1em;
+}
 
-    .nav-item[b-lv81tnalhc]  a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
+nav li:hover[b-lv81tnalhc] {
+    background-color: #FFAD00;
+    cursor: pointer;
+    color: #000000;
+}
 
-.nav-item[b-lv81tnalhc]  a.active {
-    background-color: rgba(255,255,255,0.37);
+li:hover a[b-lv81tnalhc] {
+    color: inherit;
+}
+
+button:hover[b-lv81tnalhc],
+input[type=submit]:hover[b-lv81tnalhc],
+.edit-btn:hover[b-lv81tnalhc],
+.readbtn:hover[b-lv81tnalhc] {
+    background-color: #FFAD00 !important;
+}
+
+/* Meny knapp, öppna meny */
+.menu-btn[b-lv81tnalhc] {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #0072B2;
+    border: white solid 2px;
+    cursor: pointer;
+}
+
+.open[b-lv81tnalhc] {
+    margin: 0 1em;
+}
+
+.menu-btn:hover[b-lv81tnalhc] {
+    background-color: #FFAD00;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+}
+
+.menu-icon[b-lv81tnalhc] {
+    margin-right: 10px;
+}
+
+/* de tre svarta strecken (hamburg-icon) */
+.bars[b-lv81tnalhc] {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.menu-text[b-lv81tnalhc] {
+    font-size: 1.2em;
     color: white;
 }
 
-.nav-item[b-lv81tnalhc]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
+/* Meny knapp, stäng */
+.close[b-lv81tnalhc] {
+    margin: 1em 1.5em;
+    padding: 10px 15px;
+
 }
 
-@media (min-width: 641px) {
-    .navbar-toggler[b-lv81tnalhc] {
+/* Roterar två lodräda streck, till ett kryss */
+.cross1[b-lv81tnalhc] {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2[b-lv81tnalhc] {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+.nav-select[b-lv81tnalhc] {
+    background-color: #D55E00;
+
+}
+
+.nav-select a[b-lv81tnalhc] {
+    color: #000000;
+}
+
+li[b-lv81tnalhc] {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* Större skärmas - gör menyn som inline */
+@media only screen and (min-width: 992px) {
+    header[b-lv81tnalhc] {
+        padding: 0 0;
+        position: fixed;
+    }
+
+    .logo a[b-lv81tnalhc] {
+        margin-left: 2rem;
+    }
+
+    .menu-btn[b-lv81tnalhc] {
         display: none;
     }
 
-    .collapse[b-lv81tnalhc] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
+    #open-menu[b-lv81tnalhc] {
+        display: none !important;
     }
-    
-    .nav-scrollable[b-lv81tnalhc] {
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
-        overflow-y: auto;
+
+    nav[b-lv81tnalhc] {
+        display: block !important;
+        position: static;
+        box-shadow: 0 0px 0px;
+        height: auto;
+        font-size: 1.4em;
+        width: auto;
+    }
+
+    nav ul[b-lv81tnalhc] {
+        height: 100%;
+        margin-right: 1rem;
+    }
+
+    nav li[b-lv81tnalhc] {
+        display: inline;
+        padding: 1.2em 0;
     }
 }
