@@ -1,7 +1,30 @@
 ﻿@page "/"
-
+@using static About
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
-Welcome to your new app.
+
+
+
+<button class="btn btn-primary" @onclick="Toggler">Information om sidan</button>
+
+@if(dummy){
+    <About />
+}
+
+@code {
+    bool dummy = true;
+    void Toggler()
+    {
+        if (dummy)
+        {
+            dummy = false;
+        }
+        else
+        {
+            dummy = true;
+        }
+
+    }
+}
